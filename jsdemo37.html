@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script form</title>
+</head>
+<body>
+    <h1>JS Form demo</h1>
+    <form name="form1"onsubmit="showfullname()">
+        <br>
+        <br>
+        <input type="submit"value="submit">
+    
+    </form>
+    <script>
+        function showfullname()
+        {
+            let name1=document.forms["form1"].fname.value;
+            let name2=document.forms["form1"].fname.value;
+            letFullname=name1+""+name2;
+        }
+    </script>
+</body>
+</html>

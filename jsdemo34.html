@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object demo</h1>
+    <script>
+        var arithmetic={
+            num:10,
+            num2:23,
+            add:function()
+            {
+                return this.num1+this.num2;
+            },
+            substract:function()
+            {
+                return this.num1-this.num2;
+            },
+            multiply:function()
+            {
+                return this.num1*this.num2;
+            },
+            dvide:function()
+            {
+                return this.num1/this.num2;
+            }
+
+        }
+        
+        document.write("<br>Addition:"+arithmetic.add());
+        document.write("<br>substraction:"+arithmetic.substract());
+        document.write("<br>multiplication:"+arithmetic.multiply());
+        document.write("<br>division:"+arithmetic.divide());
+    </script>
+</body>
+</html>

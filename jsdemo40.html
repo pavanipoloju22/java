@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateUser()
+    {
+    
+        let username=loginform.uname.values;
+        let password=loginform.password.values;
+        if(username=="student" && password=="India")
+          alert("Welcome user");
+       else:
+       alert("Invalid user id or password");
+    }
+    </script>
+   <body>
+        <h1> login form</h1>
+        <form name="loginform">
+        <table align="center" cellpadding="20" border="2">
+        
+        <tr>
+            <td><lable for="Uname">User name</lable></td>
+            <td> <input type="text" id="uname" place holder="enter user name"></td>
+        </tr>
+        <tr>
+            <td><lable for="pwd">password</lable></td>
+            <td> <input type="password" id="password" place holder="enter password"></td>
+        </tr>
+        <td><input type="button" id="btnlogin" value="login"onclick="validateuser()"></td>
+        <tr></tr>
+       <td><p id="result">Result</h2></td>
+
+    </table>
+</body>
+</html>

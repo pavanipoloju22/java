@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java script with methods and program</h1>
+    <script>
+        var person={
+            firstName:"mallika",
+            lastName:"goud",
+            ID:"555555",
+            fullName:function(){
+                return this.firstName+""+this.lastName;
+            }
+        };
+        document.write("<br>ID:"+person.Id);//calling property
+        document.write("<br>FullName:"+person.fullName());//calling function
+    </script>
+</body>
+</html>

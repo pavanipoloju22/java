@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <p>Welcome to JS Events</p>
+    <p id="demo1">window.confirm() demo</p>
+    <button name="btn1"onclick="delete date()">Delete</button>
+    <script>
+        function delete Data()
+        {
+            let result=window.confirm("are you sute to delete?");
+            if(result==True)
+            document.getElementById("demo1").innerHTML="Record deleted";
+            else
+            document.getElementById("demo1").innerHTML="Record not deleted";
+        }
+    </script>
+</head>
+</body>
+    
+</html>

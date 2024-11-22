@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window.prompt() demo</title>
+</head>
+<body onload="display()">
+    <p>welcome to js events</p>
+    <p id="demo1">calling function on event</p>
+    <script>
+        function display()
+        {
+            let name=window.prompt("enter your name");
+            document.getElementById("demo1").innerHTML="Welcome"+name;
+        }
+    </script>
+</body>
+    
+</body>
+</html>

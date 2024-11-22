@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <sript>
+   function validateage()
+    {
+        let age=number(document.form1.age.value);
+        if(age>=18 && age<=45)
+        {
+         alert("valid age");
+        return True;
+    }
+    else
+    {
+        alert("age should be in between 18 and 45-----------!!!!")
+        return False;
+    }
+    </sript>
+</head>
+<body>
+    <h1>Age validation demo</h1>
+    <form name="form1">
+        Empid:<input type="text"id="age"placeholder="enter age here"/>
+        <br>
+        <br>
+        <input type="button"value="submit"onclick="validateAge()"/>
+    </form>
+    <p id="result">result</p>
+</body>
+</html>

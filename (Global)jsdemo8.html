@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global variables Demo</title>
+</head>
+<body>
+    <h1>Global variables demo</h1>
+    <script>
+        var data=200;//global var
+        function fun1()
+        {
+            var a=10;//local var
+            document.write("<br/>data from fun1:"+data);
+            document.write("<br/>a value from fun1:"+a);
+            document.write("<br>");
+        }
+        function fun2()
+        {
+            var b=10;
+            document.write("<br/>data from fun2:"+data);
+            document.write("<br/>b value from fun2:"+b);
+            document.write("<br/>a value from fun2:"+a)
+        }
+        fun1();
+        fun2();
+    </script>
+</body>
+</html>

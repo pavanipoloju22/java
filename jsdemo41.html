@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script>
+    function sumoftwo()
+    {
+    
+        let firstNum=form1.num1.value;
+        let secondNum=form1.num2.value;//number()is use to convert any type into(integer)number
+        let sum=Number(firstuNm)+Number(secondNum);
+        document.getElementById("result").innerHTML=sum;
+       
+    }
+    </script>
+
+   <body>
+        <h1 align="center">sum of two numbers</h1>
+        <form name="form1">
+        <table align="center" cellpadding="20" border="2">
+        
+        <tr>
+            <td><lable for="num1">Enter first number</lable></td>
+            <td> <input type="number" id="number1" place holder="enter 1st number"></td>
+        </tr>
+        <tr>
+            <td><lable for="num2">Enter second number</lable></td>
+            <td> <input type="number" id="number2" place holder="enter 2nd number"></td>
+        </tr>
+        <td><input type="button"value="submit"onclick="sumoftwo()"></td>
+        <tr></tr>
+       <td><p id="result">Result</h2></td>
+       </head>
+    </table>
+</body>
+</html>

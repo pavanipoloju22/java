@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   function showResult()
+   {
+    let x=document.forms["form1"]["fname"].value;
+    if(x=="")
+   {
+    alert("form submited");
+    return false;
+   }
+   else
+   {
+    alert("form submitted");
+   }
+
+   }
+    </script>
+</head>
+<body>
+    <p>welcome to js validations</p>
+    <p id="demo1">checking mandatory field demo</p>
+    <h1>Registration form</h1>
+    <form name="form1"onsubmit="showResult()">
+        <table>
+            <tr>
+                <td>First name</td>
+                <td><input type="text"name="lname"maxlength="20"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <td><input type="submit"name="btnsubmit"value="submit"/></td>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h2 id="result"></h2>s
+    
+</body>
+</html>
